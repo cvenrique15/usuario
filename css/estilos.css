@@ -1,0 +1,201 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    background-color: #0d0d0d;
+    color: #33ff33; /* Verde neón */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Side Menu */
+.side-menu {
+    width: 200px;
+    background: #1a1a1a;
+    border-right: 2px solid #33ff33;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.side-menu h2 {
+    color: #33ff33;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.side-menu a {
+    display: block;
+    color: #33ff33;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.side-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    margin-left: 220px; /* Ancho del menú lateral + margen */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #33ff33;
+    position: fixed;
+    top: 0;
+    left: 220px; /* Ancho del menú lateral */
+    right: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #33ff33;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #1a1a1a;
+    border-bottom: 2px solid #33ff33;
+    margin-top: 80px; /* Altura del header */
+}
+
+nav a {
+    color: #33ff33;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    cursor: pointer; /* Cambiado para enfatizar clicabilidad */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    margin-top: 120px; /* Altura del header y del nav */
+}
+
+section {
+    display: none; /* Por defecto, ocultar todas las secciones */
+}
+
+section.active {
+    display: block; /* Mostrar la sección activa */
+}
+
+h2 {
+    color: #33ff33;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    background: #1a1a1a;
+    padding: 20px;
+    border: 2px solid #33ff33;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #33ff33;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #0d0d0d;
+    color: #33ff33;
+    border: 2px solid #33ff33;
+}
+
+form button {
+    background: #33ff33;
+    color: #0d0d0d;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #28cc28;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #ff3333; /* Rojo neón */
+}
+
+/* Terminal-like Animation */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s step-start 0s infinite;
+}
+
+.table-container {
+    overflow-x: auto; /* Agregar barra de desplazamiento horizontal si es necesario */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1a1a1a;
+    color: #33ff33;
+}
+
+tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+tr:hover {
+    background-color: #383838;
+}
+
+
+
